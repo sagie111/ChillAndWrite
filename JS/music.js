@@ -10,7 +10,7 @@ var z = document.getElementById("myAudio3");
 var m = document.getElementById("myAudio4");
 
 
-var list = [x,y,z,m,c,a].sample();
+var list = [x,y,z,m].sample();
 
 function playAudio() { 
 
