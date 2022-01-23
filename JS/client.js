@@ -23,7 +23,7 @@ function fullScreen() {
 
 // music btn --------
 function musicbtn() {
-    window.open('file:///C:/Users/sagie/Desktop/IDK/music.html','popup','width=450,height=400,scrollbars=no,resizable=0'); return false;
+    window.open('chillandwrite.netlify.app/music.html','popup','width=450,height=400,scrollbars=no,resizable=0'); return false;
 }
 
 // download txt file -------------
@@ -128,7 +128,7 @@ if (storage) {
 
 }
 else {
-    window.location.href ="file:///C:/Users/sagie/Desktop/IDK/index.html";
+    window.location.href ="chillandwrite.netlify.app/index.html";
 }
 
 
