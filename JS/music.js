@@ -13,11 +13,5 @@ var m = document.getElementById("myAudio4");
 var list = [x,y,z,m].sample();
 
 function playAudio() { 
-
-
-
     list.play(); 
-
-
-    
 } 
