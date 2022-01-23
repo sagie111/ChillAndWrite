@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+
+/* The Modal (background) */
+.modal {
+    font-family: 'Cutive Mono', monospace;
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+.modal button {
+    
+  font-size: 17px;
+  background-color: red;
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+h4 {
+    color: red;
+}
+
+.modal button:hover{  
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+}
+
+  /* Modal Content */
+.modal-content {
+    
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 7px;
+    width: 22%;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+    font-family: 'Cutive Mono', monospace;
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+.modal button {
+    
+  font-size: 17px;
+  background-color: red;
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+h4 {
+    color: red;
+}
+
+.modal button:hover{  
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+}
+
+  /* Modal Content */
+.modal-content {
+    
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 7px;
+    width: 28%;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.down {
+    
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.down button {
+    font-size: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.down button:hover {
+    cursor: pointer;
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+
+}
+
+#night:checked + .body {
+  background-color: #242729;
+  color: white;
+}
+
+
+body {
+    background: #834d9b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d04ed6, #c06be4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d04ed6, #a33fce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.name h1 {
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+}
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.emoji {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    background: #D1D8EC;
+    
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+
+
+
+.emoji button {
+    border: none;
+    background-color: transparent;
+    font-size: 70px;
+    
+}
+
+.emoji button:hover {
+    cursor: pointer;
+
+}
+
+
+.switch {
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  
+  textarea {
+    resize: none;
+
+    width: 550px;
+    height: 300px;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+    border: 3px solid black;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    color: yellow;
+    font-weight: bold;
+
+    font-family: 'Cutive Mono', monospace;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 14px 20px;
+    transition: background-color 0.4s ease 0s;
+  }
+
+
+  
+  
+  textarea:focus {
+    
+      background: none repeat scroll 0 0 rgb(36, 36, 36);
+      outline-width: 0;
+      color: yellow;
+  }
+
+textarea::placeholder{
+  color: yellow;
+}
+
+.center2 {
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.chr {
+  display: flex;
+  justify-content: center;
+
+}
+
+.chr p {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.chr button {
+  margin-top: 15px;
+  margin-left: 20px;
+  height: 30px;
+  font-size: 20px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.chr button:hover {
+  cursor: pointer;
+  transition: .2s ease-in;
+  transform: translateY(-5px)
+
+}

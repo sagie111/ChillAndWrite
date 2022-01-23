@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+
+body {
+    background-color: #2c2c32;
+
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.emoji {
+    
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    background: #D1D8EC;
+    
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.emoji:hover {
+    cursor: pointer;
+    background-color: rgb(255, 245, 226);
+    transition: .2s ease-in;
+    transform: translateY(-5px)
+}
+
+
+.emoji button {
+    border: none;
+    background-color: transparent;
+    font-size: 60px;
+    
+}
+
+.emoji button:hover {
+    cursor: pointer;
+
+}
+
+h1 {
+    color: yellow;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
