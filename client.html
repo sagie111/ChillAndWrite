@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>✨ Chill And Write ✨</title>
+        <link rel="stylesheet" href="CSS/client.css">
+
+    </head>
+    <body>
+        <div class="center">
+            <div class="emoji">
+                <button id="button" onclick="myfunc()" >🥳</button>
+            </div>
+        </div>
+        <div class="name">
+            <h1 id="text"> </h1>
+
+        </div>
+                
+     
+
+        
+
+        <div class="down">
+            <button id="myBtn">⚙️ Settings</button>
+            <button onclick="musicbtn()" style="margin-left: 10px;">🎵 Music</button>
+            <button style="margin-left: 10px;" onclick="location.href = 'https://sagied.org';">📚 About</button>
+        </div>
+                
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" >
+            <span class="close">&times;</span>
+            <h1 style="color: black;">⚙️ Settings</h1>
+                 
+            <label class="switch" >
+                <input id="nightmode" type="checkbox" >
+                <span class="slider round"></span>
+            </label>
+
+            <h4 style="color: blue;">Change the background color (Dark Mode)</h4>
+            <button onclick="deletedData()">Delete My Account ⚠️</button>
+            <h4>All your data will be deleted! (Name, Emoji, Color...)</h4>
+            </div>
+        </div>
+
+
+
+        <div class="center2">
+            <textarea id="textbox" onkeyup="charcountupdate(this.value)" placeholder="Write your thoughts... ✍️"></textarea>
+          
+        </div>
+
+
+        <div class="chr">
+            <p id="letters">Letters: 0</p>
+            <button onclick="txtFile()">🎄 Download</button>
+            <button onclick="copy()">💡 Copy</button>
+            <button onclick="fullScreen()">👻 Full-Screen</button>
+            <button onclick="saveWrite()">Save 💪</button>
+
+        </div>
+
+        <script src="API/FileSaver.js"></script>
+        <script src="JS/client.js"></script>
+
+
+
+    </body>
+</html>

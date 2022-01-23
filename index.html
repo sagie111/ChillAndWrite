@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+ 
+        <title>✨ Chill And Write ✨</title>
+ 
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+
+    
+
+        <div class="the-box">
+            <h1>Register 😤✨</h1>
+            <h3>Please fill in this form to create an account🎃</h3>
+            <hr>
+            <h2>Hi 👋 What's your name?</h2>
+            <input id="input" placeholder="Example: John Kreese" type="text" >
+
+
+            <button onclick="myfunction()" id="buttom">Sign Up! 🥳</button>
+
+            <h4>If you made a mistake with the sign up you can change the details later on!⚠️</h4>
+
+        </div>
+        
+        <script>
+            const buttom = document.querySelector('buttom');
+            const input = document.querySelector('input');
+            const storageInput = localStorage.getItem('name__!')
+
+            let x = "";
+
+            
+            if (storageInput) {
+                window.location.href = "file:///C:/Users/sagie/Desktop/IDK/client.html"
+            }
+            else {
+
+            input.addEventListener('input', letter => {
+                x = letter.target.value;
+                
+            })
+
+            
+            function myfunction(){
+                if (input.value.length >= 4 & input.value.length <= 18){
+                    localStorage.setItem('name__!', x);
+                    window.location.reload();
+                }
+                else {
+                    alert("You need a minimum of 4 characters!!! 😡")
+                }
+            }
+       
+
+
+            }
+
+        </script>
+    </body>
+</html>
