@@ -115,6 +115,17 @@ const emojiStorage  = localStorage.getItem('emoji__!');
 const textbox2 = document.getElementById('textbox');
 const savedText = localStorage.getItem('thoughts__!')
 
+
+if (storage) {
+    document.getElementById("text").innerHTML = "Chill And Write, " + storage;
+}
+else {
+    window.location.href ="/index.html";
+}
+
+
+
+
 if (emojiStorage) {
     button.textContent = emojiStorage;
 }
@@ -123,14 +134,15 @@ if (savedText) {
     textbox2.textContent = savedText;
 }
 
-if (storage) {
-    document.getElementById("text").innerHTML = "Chill And Write, " + storage;
 
-}
-else {
-    window.location.href ="/index.html";
+
+if (localStorage.getItem('background__!')) {
+    document.querySelector('body').style.background= localStorage.getItem('background__!');
 }
 
+if (localStorage.getItem('textcolor__!'))  {
+    document.querySelector('body').style.color=localStorage.getItem('textcolor__!') ;
+}
 
 
 
